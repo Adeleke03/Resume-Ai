@@ -2,6 +2,7 @@ import React from 'react';
 import { HiOutlineEnvelope, HiOutlineDocumentText } from "react-icons/hi2";
 import { IoFlashOutline } from "react-icons/io5";
 import { CiSearch } from "react-icons/ci";
+import { Link } from 'react-router-dom';
 
 
 
@@ -71,9 +72,11 @@ const QuickActions = () => {
           <p className='font-[500] font-medium md:text-[20px] leading-[100%] tracking-[0%] text-[#7A7A7A] '>Join thousands of job seekers who have successfully landed their dream jobs with our AI-powered tools.</p>
             </div>
 
-          <button className="btn btn-primary rounded-[10px] bg-[#4F39F6] border-[#4F39F6] hover:bg-[#3728AC] text-white md:text-[20px] leading-[100%] tracking-[0%] px-[15px] w-[80%] mx-auto py-[12px]">
+         <Link to="/signup">
+         <button className="btn btn-primary rounded-[10px] bg-[#4F39F6] border-[#4F39F6] hover:bg-[#3728AC] text-white md:text-[20px] leading-[100%] tracking-[0%] px-[15px] w-[80%] mx-auto py-[12px]">
             Get Started for Free
           </button>
+         </Link> 
           </div>
         </section>
       </main>

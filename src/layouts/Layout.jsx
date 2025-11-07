@@ -3,10 +3,10 @@ import Navbar from './Navbar';
 import Footer from './Footer';
 import { Outlet } from 'react-router-dom';
 
-const Layout = () => {
+const Layout = ({user, setUser}) => {
   return (
     <>
-    <Navbar/>
+    <Navbar user={user} setUser={setUser}/>
     <main>
         <Outlet /> {/* This renders the nested route components */}
       </main>

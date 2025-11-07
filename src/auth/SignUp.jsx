@@ -98,7 +98,7 @@ const SignUp = () => {
                   placeholder="Enter your email"
                   {...register("email")}
                 />
-                <HiOutlineEnvelope className="absolute left-3 bottom-4" />
+                <HiOutlineEnvelope className="absolute left-3 bottom-3.5" />
               </div>
               <p className="text-red-600">{errors.email?.message}</p>
 

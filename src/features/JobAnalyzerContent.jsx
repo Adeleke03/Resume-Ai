@@ -56,7 +56,7 @@ const JobAnalyzerContent = () => {
   };
   return (
     <>
-    <section className='wrapper bg-[#F5F5F5]  '>
+    <section className='wrapper  '>
 
      {/* Layout */}
       <div className="w-full  lg:max-w-full grid grid-cols-1 md:grid-cols-2 gap-6 items-start">

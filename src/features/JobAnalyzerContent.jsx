@@ -56,7 +56,7 @@ const JobAnalyzerContent = () => {
   };
   return (
     <>
-    <section className='wrapper  '>
+    <section className='  '>
 
      {/* Layout */}
       <div className="w-full  lg:max-w-full grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
@@ -122,7 +122,7 @@ const JobAnalyzerContent = () => {
               {/* Match Score */}
               <div className="bg-green-50 rounded-lg p-6">
                 <div className="flex justify-between items-center mb-2">
-                  <h3 className="text-[20px] text-[#1F1F1F] flex gap-[10px] font-medium text-gray-800">
+                  <h3 className="text-[20px] text-[#1F1F1F] flex gap-[10px] py-3 font-medium text-gray-800">
                    <HiMiniArrowTrendingUp className='text-[#28A745]' size={25}/> Match Score
                   </h3>
                   <span className="text-[36px] font-medium text-green-600">
@@ -134,10 +134,10 @@ const JobAnalyzerContent = () => {
 
               {/* Required Skills */}
               <div className="bg-white rounded-lg shadow-sm border border-gray-100 p-6">
-                <h3 className="text-[20px] font-medium text-[#1F1F1F] mb-3">
+                <h3 className="text-[20px] pt-3 font-medium text-[#1F1F1F] mb-3">
                   Required Skills
                 </h3>
-                <div className="flex flex-wrap gap-2 mb-4">
+                <div className="flex flex-wrap py-3 gap-2 mb-4">
                   {analysis.requiredSkills.map((skill, index) => (
                       <span
                       key={index}
@@ -147,17 +147,17 @@ const JobAnalyzerContent = () => {
                     </span>
                   ))}
                 </div>
-                <MyButton className="w-full border border-[#B2B2B2] rounded-md py-2 text-[18px] font-bold flex items-center cursor-pointer justify-center gap-2 hover:bg-gray-50">
+                <MyButton className="w-full border border-[#B2B2B2] rounded-md py-2  text-[18px] font-bold flex items-center cursor-pointer justify-center gap-2 hover:bg-gray-50">
                  <img src={Logo3} alt="" /> Add to Resume
                 </MyButton>
               </div>
 
               {/* Important Keywords */}
               <div className="bg-white rounded-lg shadow-sm border  border-gray-100 p-6">
-                <h3 className="text-[20px] font-medium text-[#1F1F1F] mb-3">
+                <h3 className="text-[20px] font-medium text-[#1F1F1F] pt-3 mb-3">
                   Important Keywords
                 </h3>
-                <div className="flex gap-[10px] flex-wrap gap-2 mb-2">
+                <div className="flex py-3  gap-[10px] flex-wrap gap-2 mb-2">
                   {analysis.keywords.map((keyword, index) => (
                       <span
                       key={index}
@@ -175,7 +175,7 @@ const JobAnalyzerContent = () => {
 
               {/* Key Requirements */}
               <div className="bg-white rounded-lg shadow-sm border border-gray-100 p-6">
-                <h3 className="text-[#1F1F1F] font-medium text-[20px] mb-3">
+                <h3 className="text-[#1F1F1F] font-medium text-[20px] pt-3 mb-3">
                   Key Requirements
                 </h3>
                 <ul className="space-y-2 text-sm text-gray-700">

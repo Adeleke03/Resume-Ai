@@ -1,17 +1,19 @@
-import React, { useState } from "react";
-import { CiSearch } from "react-icons/ci";
-import { LiaLongArrowAltLeftSolid } from "react-icons/lia";
+import React from "react";
 import JobAnalyzerNav from "../layouts/JobAnalyzerNav";
 import JobAnalyzerContent from "../features/JobAnalyzerContent";
 
 const JobAnalyzer = () => {
   return (
     <>
-      <header className=" ">
+      <header>
         <JobAnalyzerNav />
       </header>
-      <main  className="pt-[105px] lg:pt-[120px] bg-[#F5F5F5] min-h-screen">
-        <JobAnalyzerContent />
+
+      {/* ✅ full-width background, wrapper applied inside content */}
+      <main className="pt-[105px] lg:pt-[120px] bg-[#F5F5F5] min-h-screen w-full">
+        <div className="wrapper">
+          <JobAnalyzerContent />
+        </div>
       </main>
     </>
   );

@@ -33,10 +33,10 @@ function App() {
         <Route element={<PrivateLayout user={user} setUser={setUser} />}>
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/profile" element={<Profile />} />
+        </Route>
           <Route path="/coverlettergenerator" element={<CoverLetterGenerator/>} />
           <Route path="/resumebuilder" element={<ResumeBuilder/>} />
           <Route path="/jobanalyzer" element={<JobAnalyzer/>}/>
-        </Route>
       </Routes>
     </Router>
   );

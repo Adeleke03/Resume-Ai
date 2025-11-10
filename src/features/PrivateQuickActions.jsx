@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { LiaLongArrowAltRightSolid } from "react-icons/lia";
 import { BsFolder2Open } from "react-icons/bs";
 
+
 const PrivateQuickActions = () => {
   const quickActionsInfo = [
     {

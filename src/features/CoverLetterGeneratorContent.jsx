@@ -125,7 +125,7 @@ Ayo Sackey
               name="tone"
               value={coverLetterData.tone}
               onChange={handleChange}
-              className="w-full bg-[#ECECF0] p-3 rounded-[10px]  animate-instant outline-none"
+              className="w-full bg-[#ECECF0] py-3 rounded-[10px] px-3 animate-instant outline-none"
             >
               <option className="bg-white text-[#1F1F1F]">Professional</option>
               <option className="bg-white text-[#1F1F1F]">Friendly</option>
@@ -210,7 +210,7 @@ Ayo Sackey
 
           {/* Letter Display Area */}
           {!letter ? (
-            <div className="flex flex-col items-center border-dashed border-[1px] border-[#B2B2B2] bg-[#F8FAFC] justify-center h-full text-center text-[#7A7A7A]">
+            <div className="flex flex-col items-center rounded-[15px] py-9 border-dashed border-[1px] border-[#B2B2B2] bg-[#F8FAFC] justify-center h-full text-center text-[#7A7A7A]">
               <div className="bg-[#EEF2FF]  w-16 h-16 rounded-full flex items-center justify-center my-4">
                 <HiOutlineEnvelope size={40} className="text-xl bg-[#EFF6FF]  rounded-[10px] text-[#4F39F6]"/>
               </div>
@@ -247,7 +247,7 @@ Ayo Sackey
       {/* Pro Tips */}
       <div className="pl-5 pr-2 mx-auto mt-4 gap-[10px] mb-11 w-full py-5 bg-[#EDEBFE] rounded-[15px]">
         {/* div for header and logo */}
-        <div className="flex gap-[10px] items-center">
+        <div className="flex gap-[10px] pb-4 items-center">
             <img className="w-10" src={Logo} alt="logo" /> <span className="text-[24px] font-[500]  "> Pro Tips</span>
         </div>
         <ul className="list-disc pl-5 font-[500] text-[#4C4C4C] text-[18px] ">

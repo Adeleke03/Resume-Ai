@@ -10,7 +10,7 @@ const JobAnalyzer = () => {
       </header>
 
       {/* ✅ full-width background, wrapper applied inside content */}
-      <main className="pt-[105px] lg:pt-[120px] bg-[#F5F5F5] h-fit w-full">
+      <main className="pt-[105px] lg:pt-[120px] bg-[#F5F5F5] h-screen w-full">
         <div className="wrapper">
           <JobAnalyzerContent />
         </div>

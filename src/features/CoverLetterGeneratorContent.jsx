@@ -80,7 +80,7 @@ Ayo Sackey
     <section className="wrapper md:py-10 py-5">
       <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
         {/* Left Form Card */}
-        <div className="bg-white rounded-[15px] flex flex-col md:gap-[20px] gap-[15px] shadow-sm p-6 border border-gray-200 h-fit">
+        <div className="bg-white rounded-[15px] flex flex-col md:gap-[20px] gap-[15px] shadow-sm p-6 border-[0.6px] border-[#B2B2B2] h-fit">
           <h2 className="text-[24px] font-[500] text-[#353535] mb-2">
             Generate Your Cover Letter
           </h2>

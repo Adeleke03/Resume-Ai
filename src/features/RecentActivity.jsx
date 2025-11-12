@@ -31,11 +31,11 @@ const RecentActivity = () => {
           Recent Activity
         </h2>
       <section>
-  <div className="border-[#B1B1B1] border-[0.5px] rounded-[15px] overflow-hidden shadow-sm">
+  <div className="border-[#B1B1B1] border-[0.5px]  rounded-[15px] overflow-hidden shadow-sm">
     {recentActivityData.map((activity, id) => (
       <div
         key={id}
-        className={`card card-side rounded-[0px] border-[#B1B1B1] px-[8px] bg-base-100 ${
+        className={`card card-side  rounded-[0px] border-[#B1B1B1] px-[16px] bg-base-100 ${
           id !== recentActivityData.length - 1 ? "border-b-[0.5px]" : ""
         }`}
       >
@@ -65,7 +65,7 @@ const RecentActivity = () => {
 
         {/* footer Hero */}
 
-        <section className="bg-[#EDEBFE] grid gap-[32px] items-center shadow-sm">
+        <section className="bg-[#EDEBFE] rounded-[15px] grid gap-[32px] items-center shadow-sm">
           <div className="card card-side w-[90%] mx-auto items-center bg-inherit flex ">
             <figure className="lg:h-[98px] lg:w-[98px]  lg:rounded-[102px] rounded-full bg-white p-3 shadow-lg border-[#B2B2B2] border-[0.6px]">
               <img
@@ -80,7 +80,7 @@ const RecentActivity = () => {
                 to identify key skills and incorporate them into your resume for
                 better results.
               </p>
-              <Link>
+              <Link to='/jobanalyzer'>
               <div className="card-actions justify-start">
                 <button className="btn text-[20px] font-medium h-[51px] py-[12px] px-[25px] bg-[#FFFFFF] rounded-[15px]">Try Job Analyzer</button>
             </div>

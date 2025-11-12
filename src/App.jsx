@@ -13,7 +13,6 @@ import PrivateLayout from "./layouts/PrivateLayout";
 import CoverLetterGenerator from "./pages/CoverLetterGenerator";
 import ResumeBuilder from "./pages/ResumeBuilder";
 import JobAnalyzer from "./pages/JobAnalyzer";
-import ResumeBuilderCopy from "./pages/ResumeBuilderCopy";
 
 function App() {
   const [user, setUser] = useState(null);
@@ -37,7 +36,6 @@ function App() {
         </Route>
           <Route path="/coverlettergenerator" element={<CoverLetterGenerator/>} />
           <Route path="/resumebuilder" element={<ResumeBuilder/>} />
-          <Route path="/resumebuildercopy" element={<ResumeBuilderCopy/>} />
           <Route path="/jobanalyzer" element={<JobAnalyzer/>}/>
       </Routes>
     </Router>

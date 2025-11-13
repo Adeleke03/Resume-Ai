@@ -8,8 +8,8 @@ const Dashboard = ({user, setUser}) => {
     <><section className='wrapper bg-[#F5F5F5] '>
 
       <PrivateHero/>
-      <PrivateQuickActions/>
-      <RecentActivity/>
+      <PrivateQuickActions user={user} setUser={setUser}/>
+      <RecentActivity />
     </section>
     </>
   )

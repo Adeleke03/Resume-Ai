@@ -232,7 +232,7 @@ return (
                   />
                   </div>
                   </section>
-                <MyButton className="w-full border border-[#B2B2B2] rounded-[10px] py-2 hover:bg-gray-50">
+                <MyButton className="w-full border font-bold border-[#B2B2B2] rounded-[10px] py-[12px] hover:bg-gray-50">
                   + Add Experience
                 </MyButton>
               </div>
@@ -248,7 +248,7 @@ return (
                   onChange={handleChange}
                   placeholder="List your skills separated by comma, space or semicolon; ..."
                 />
-                <MyButton className="w-full mx-auto gap-[5px] lg:gap-[15px] h-[52px] justify-center flex items-center border-[0.6px] border-[#B2B2B2] font-bold lg:text-[20px] rounded-[10px] py-2 hover:bg-gray-50"><img src={Logo3} alt="" /><span>Suggest Skills Based on Experience</span></MyButton>
+                <MyButton className="w-full border font-bold border-[#B2B2B2] rounded-[10px] py-[12px] hover:bg-gray-50 flex items-center justify-center"><img src={Logo3} alt="" /><span>Suggest Skills Based on Experience</span></MyButton>
               </div>
               
             )}

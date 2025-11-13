@@ -15,7 +15,18 @@ import ResumeBuilder from "./pages/ResumeBuilder";
 import JobAnalyzer from "./pages/JobAnalyzer";
 
 function App() {
-  const [user, setUser] = useState(null);
+  const [user, setUser] = useState({
+    fullName: "Sackey David",
+    email: "sackey@gmail.com",
+    phone: "+234 9055854282",
+    location: "Ogun State, Nigeria",
+    photo: "", // you can later replace this with a profile image URL
+    stats: {
+      resumes: 3,
+      letters: 3,
+      applications: 3,
+    },
+  });
 
   return (
     <Router>
@@ -31,12 +42,16 @@ function App() {
 
         {/* Private routes */}
         <Route element={<PrivateLayout user={user} setUser={setUser} />}>
-          <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/profile" element={<Profile />} />
+          <Route path="/dashboard" element={<Dashboard user={user} setUser={setUser} />} />
         </Route>
-          <Route path="/coverlettergenerator" element={<CoverLetterGenerator/>} />
-          <Route path="/resumebuilder" element={<ResumeBuilder/>} />
-          <Route path="/jobanalyzer" element={<JobAnalyzer/>}/>
+        {/* Private Routes with different layout each  */}
+        <Route user={user} setUser={setUser}>
+
+          <Route path="/coverlettergenerator" element={<CoverLetterGenerator user={user} setUser={setUser} />}/>
+          <Route path="/resumebuilder" element={<ResumeBuilder user={user} setUser={setUser} />} />
+          <Route path="/jobanalyzer" element={<JobAnalyzer user={user} setUser={setUser} />}/>
+          <Route path="/profile" element={<Profile user={user} setUser={setUser} />} />
+        </Route>
       </Routes>
     </Router>
   );
